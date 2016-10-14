@@ -7,6 +7,9 @@ def clps(grde):
         return 2.0
     if grde == "D" or "d":
         return 1.0
+    if grde == "F" or "f":
+        return 0.0
+    
 lg1 = input("Please enter your letter grade for math: ")
 lg2 = input("Please enter your letter grade for science: ")
 lg3 = input("Please enter your letter grade for history: ")
@@ -15,4 +18,4 @@ lg5 = input("Please enter your letter grade for computer programming: ")
 lg6 = input("Please enter your letter grade for your language: ")
 lg7 = input("Please enter your letter grade for another elective: ")
 
-print("Your GPA is", (clps(lg1)+clps(lg2)+clps(lg3)+++++)/7)
+print("Your GPA is", ((clps(lg1)+clps(lg2)+clps(lg3)+clps(lg4)+clps(lg5)+clps(lg6)+clps(lg7)) / 7)
