@@ -1,5 +1,5 @@
 def interest(r, p, n, t):
-    return ((r/100 / n + 1) ** (n * t) * p)
+    return ((r / n + 1) ** (n * t) * p / (t * 12))
     
     
 r = float(input("What is your interest rate? "))
@@ -9,4 +9,4 @@ t = int(input("What is the life of the loan in years? "))
 
 
 
-print("The total cost of the loan is $ {:.2f}".format(interest(r, p, n, t)), ".")
+print("The monthly payment amount for the loan is $ {:.2f}".format(interest(r, p, n, t)), ".")
