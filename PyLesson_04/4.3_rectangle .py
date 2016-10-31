@@ -1,6 +1,5 @@
-
-length = int(input("Please enter the length of the rectangle: "))
-width = int(input("Please enter the width of the rectangle: "))
+length = 32
+width = 14
 perimeter = 0
 
 def setDims():
@@ -15,6 +14,6 @@ def calcPerimeter():
 setDims()
 calcPerimeter()
 
-print("Your perimeter is {:.5f}".format(perimeter),"ft around.")
+print("Your rectangle is {:.5f}".format(perimeter),"ft around.")
 
 

@@ -1,4 +1,4 @@
-r = int(input("Please input the radius: "))
+r = 3
 area = 0
 
 def setr():

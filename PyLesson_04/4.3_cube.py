@@ -1,4 +1,4 @@
-side = int(input("Please input the value of the side: "))
+side = 4
 sa = 0
 
 def setNum():

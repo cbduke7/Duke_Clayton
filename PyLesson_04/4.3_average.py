@@ -1,6 +1,6 @@
-num1 = int(input("Please enter number 1: "))
-num2 = int(input("Please enter number 2: "))
-num3 = int(input("Please enter number 3: "))
+num1 = 13
+num2 = 12
+num3 = 6
 avg = 0
 
 def setNums():
