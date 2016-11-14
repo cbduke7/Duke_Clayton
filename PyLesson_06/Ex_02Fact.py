@@ -1,6 +1,6 @@
 num = int(input("Type in a number: "))
 factorial = 1
 
-for i in range(1, num):
+for i in range(1, (num + 1)):
     print(i * factorial) 
 
