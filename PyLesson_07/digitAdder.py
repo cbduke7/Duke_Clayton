@@ -1,11 +1,13 @@
-number = int(input("Please enter a number:" )
-total = 0
+number = int(input("Please enter a number:" ))
+s = 0
 num = number
 
-sumDigits():
+def addDigits():
     while number > 0:
-        total += number % 10
-        number = (num / 10)
+        global s, num
+        s = (number % 10 + s)
+        num /= 10
 
-sumDigits()
-print("The sum of the digits in", number,"is", total)
+addDigits()
+
+print("The sum of the digits in", number,"is", s)
