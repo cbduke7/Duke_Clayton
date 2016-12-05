@@ -5,9 +5,11 @@ rev = 0
 def getReverse():
     while num > 0:
         global rev, num
-        rev *= 10
-        rev = (number % 10 + rev)
-        num = int(num / 10)
+        rev = (rev * 10)
+        rev = (number %10 + rev)
+        num = int(num/10)
+       
 
 getReverse()
-print(number, "reversed is", rev)        
+     
+print(number, "reversed is", rev)
