@@ -1,9 +1,11 @@
 sentence = input("Please enter a string: ")
 
-def replacer():
-    global sentence
+def replace(sentence):
     if sentence.count(" ") < 0: 
         return sentence
     else:
-        return sentence * recur(sentence[0 : sentence.index(" ")] + "_" + sentence[sentence.index(" ")]
-replacer()
+        print(sentence)
+        replace((sentence.index(" ") - 1) + "_" + (sentence.index(" ") + 1)) 
+
+
+replace(sentence)
