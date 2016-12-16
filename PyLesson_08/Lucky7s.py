@@ -1,6 +1,5 @@
 number = int(input("Please enter a number: ")
 
-
 def luck(number):
     if (number > 0):
         if ((number %10) == 7):

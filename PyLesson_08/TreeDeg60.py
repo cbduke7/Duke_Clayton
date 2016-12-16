@@ -1,8 +1,8 @@
 word = input("Please enter a word: ")
 stop = len(word)
-start = 0
+start = int(0)
 
-def tree(word,start,stop):
+def tree(word, start, stop):
     if start <= stop:
         print(word[0:start])
         start += 1

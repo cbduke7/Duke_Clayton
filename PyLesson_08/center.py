@@ -6,8 +6,8 @@ def makeCenter(word):
     if len(word) >= 20:
         return word
     else:
-        print(word)
         makeCenter(" " + word + " " )
+        
         
 
 makeCenter(word1)
