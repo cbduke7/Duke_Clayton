@@ -1,14 +1,16 @@
 words = ["bike", "ride", "helicopter", "run", "jump"]
-
-print(words)
+output = ""
+print("In order...")
 
 for i in words:
-    print(words[i])
+    output += i + " "
+
+print(output)
 
 def reverse():
-    for i in words:
-        print(words[0:i])
+    
 
 print("")
-print("Reversed:")
-reverse()
+print("Reversed...")
+
+
