@@ -4,9 +4,8 @@ word = ""
 print("In order...")
 
 for i in words:
-    output += i + " "
+    print (words[i])
 
-print(output)
 
 def reverse(word1, word2, word3, word4, word5):
     for i in range(5, 0, -1):
