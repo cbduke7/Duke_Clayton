@@ -1,7 +1,7 @@
 words = ["Cop", "Pig", "Worm", "Study", "Drive"]
 
 def first(words):
-    for i in words:
-        print(str(words[0:1]))
+    for str in words:
+        print(str[0])
 
 first(words)

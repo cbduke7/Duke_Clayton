@@ -6,6 +6,8 @@ def tree(word, start, stop):
     if start <= stop:
         print(word[0:start])
         start += 1
-        tree(word, start, tree)
+        return tree(word, start, stop)
+    else:
+        return word
 
-tree(word,start,stop)
+print(tree(word, start, stop))

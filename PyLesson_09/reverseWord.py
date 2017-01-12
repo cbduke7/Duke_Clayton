@@ -3,12 +3,12 @@ output = ""
 print("In order...")
 
 for i in words:
-    print(i)
+    print
 
 
 def reverse(words):
     for i in words:
-        return words(i) + 1
+        print(words[5:i])
 
 print("")
 print("Reversed...")
