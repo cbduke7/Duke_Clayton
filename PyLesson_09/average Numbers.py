@@ -3,7 +3,7 @@ import random
 for i in range(0, 10):
     numbers.append(random.randint(1, 100))
 
-print(numbers)
+print("Numbers...")
 
 output = ""
 j = 0

@@ -1,14 +1,14 @@
 words = ["bike", "ride", "helicopter", "run", "jump"]
-output = ""
 print("In order...")
 
 for i in words:
-    print
+    print(i)
 
 
 def reverse(words):
-    for i in words:
-        print(words[5:i])
+    for words in range(5, 0, -1):
+        print(i)
+        
 
 print("")
 print("Reversed...")
