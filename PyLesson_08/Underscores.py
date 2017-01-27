@@ -1,6 +1,9 @@
 sentence = input("Please enter a string: ")
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 def replace(sentence):
     if sentence.count(" ") == 0: 
         return sentence

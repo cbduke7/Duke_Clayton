@@ -6,7 +6,11 @@ def makeCenter(word):
     if len(word) >= 20:
         return word
     else:
+<<<<<<< Updated upstream
         return makeCenter(" " + word + " ")
+=======
+        makeCenter(" " + word + " ")
+>>>>>>> Stashed changes
         
         
 
