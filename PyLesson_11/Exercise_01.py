@@ -1,38 +1,36 @@
 class MilesPerHour:
-    def __init__(self, dist=0, hours=0, mins=0):
-        self.distance = dist
+    def __init__(self, distance, hours, minutes):
+        self.distance = distance
         self.hours = hours
-        self.minutes = mins
+        self.minutes = minutes
         mph = 0
     
-    def setValues(self, dist, hours, mins):
-        self.distance = dist
+    def setValues(self, distance, hours, minutes):
+        self.distance = distance
         self.hours = hours
-        self.minutes = mins
+        self.minutes = minutes
         mph = 0
 
-    def getDist(self):
-        return self.distance
+    def getDist():
+        return distance
 
-    def getHours(self):
-        return self.hours
+    def getHours():
+        return hours
 
-    def getMins(self):
-        return self.minutes
+    def getMins():
+        return minutes
 
-    def getMPH(self):
-        mph = distance/ (hours + minutes / 60.0)
-        return self.mph
+    def getMPH():
+        mph = distance/(hours + minutes / 60.0)
+        return mph
 def main():
-    distance = input("Enter a distance: ")
-    hours = input("Enter an amount of hours: ")
-    minutes = input("Enter the amount of minutes: ")
+    distance = int(input("Enter a distance: "))
+    hours = int(input("Enter an amount of hours: "))
+    minutes = int(input("Enter the amount of minutes: "))
     mph = MilesPerHour(distance, hours, minutes)
 
-    print(mph.getDist(), "miles in", mph.getHours(), "and", mph.getMins(), "=", mph.getMPH(),".")
-    
-
-    
+    print(mph.distance(), "miles in", mph.hours(), "and", mph.minutes(), "=", mph.mph(),".")
+        
 main()    
     
     
