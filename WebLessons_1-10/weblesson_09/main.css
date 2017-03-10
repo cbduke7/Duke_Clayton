@@ -1,0 +1,21 @@
+p	{
+	color:green;
+}
+
+p:not(.torrey){
+	color:red;
+}
+tr:nth-child(odd) > td:nth-child(even){
+	background-color:blue;
+}
+tr:nth-child(odd) > td:nth-child(odd){
+	background-color:black;
+	color:white;
+}
+tr:nth-child(even) > td:nth-child(even){
+	background-color:blue;
+}
+tr:nth-child(even) > td:nth-child(odd){
+	background-color:black;
+	color:white;
+}
