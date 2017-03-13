@@ -1,0 +1,33 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	font: bold 20px Tahoma;
+}
+
+h2 {
+	font: bold 14px Tahoma;
+}
+
+header , section, footer, aside, nav, article, hgroup {
+		display: block;
+}
+
+body {
+	text-align: center;
+}
+
+#bigWrap {
+	border: 1px solid puple;
+	width: 1000px;
+	margin: 20px auto;
+	text-align: left;
+}
+
+#topHead {
+	background: yellow;
+	border: 1px solid white;
+	padding: 20px;
+}
