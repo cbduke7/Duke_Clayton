@@ -19,7 +19,8 @@ body {
 	text-align: center;
 }
 
-#bigWrap {
+
+#bigWrapper {
 	border: 1px solid puple;
 	width: 1000px;
 	margin: 20px auto;
@@ -30,4 +31,22 @@ body {
 	background: yellow;
 	border: 1px solid white;
 	padding: 20px;
+}
+
+#topMenu {
+	background: purple;
+	color: yellow;
+}
+
+#topMenu li {
+	display:inline-block;
+	list-style:none;
+	padding: 5px;
+	font: bold 14px Tahoma;
+}
+
+#mainSection {
+	float: left;
+	width: 660px;
+	margin: 30px; 
 }
