@@ -50,3 +50,24 @@ body {
 	width: 660px;
 	margin: 30px; 
 }
+
+#sideNews {
+	float: left;
+	width: 220px;
+	margin: 20px 0px;
+	padding: 30px;
+	background: #ed8cff;
+}	
+
+#pageFooter {
+	clear: both;
+	text-align: center;
+	padding: 20px;
+	border: 2px;
+}
+
+#pgFoot {
+	clear:both;
+	text-align:center;
+	padding: 20px;
+	border-top: 2px solid green;
