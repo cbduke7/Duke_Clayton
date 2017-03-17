@@ -71,3 +71,15 @@ body {
 	text-align:center;
 	padding: 20px;
 	border-top: 2px solid green;
+}
+
+article {
+	background: yellow;
+	border:1px solid purple;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+
+article > footee {
+	text-align: right;
+}
