@@ -16,25 +16,29 @@ header , section, footer, aside, nav, article, hgroup {
 }
 
 body {
-	text-align: center;
+	width: 100%;
+	display: -webkit-box;
+	-webkit-box-pack: center;
 }
 
 
 #bigWrapper {
-	border: 1px solid puple;
-	width: 1000px;
-	margin: 20px auto;
-	text-align: left;
+	max-width: 1000px;
+	margin: 20px 0px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-flex:1;
 }
 
 #topHead {
 	background: yellow;
-	border: 1px solid white;
+	border: 3px solid black;
 	padding: 20px;
 }
 
 #topMenu {
-	background: purple;
+	border: green;
+	background: red;
 	color: yellow;
 }
 
@@ -45,18 +49,24 @@ body {
 	font: bold 14px Tahoma;
 }
 
+#flexDiv {
+	display: webkit-box;
+	-webkit-box-orient: horizontal;
+}
+
 #mainSection {
-	float: left;
-	width: 660px;
-	margin: 30px; 
+	border: 1px solid blue;
+	-webkit-box-flex: 1;
+	width: 20px;
+	margin: 20px; 
 }
 
 #sideNews {
-	float: left;
+	border: 1px solid red;
 	width: 220px;
 	margin: 20px 0px;
 	padding: 30px;
-	background: #ed8cff;
+	background: purple;
 }	
 
 #pageFooter {
@@ -80,6 +90,6 @@ article {
 	margin-bottom: 15px;
 }
 
-article > footee {
+article > footer {
 	text-align: right;
 }
