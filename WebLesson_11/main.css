@@ -69,15 +69,7 @@ body {
 	background: purple;
 }	
 
-#pageFooter {
-	clear: both;
-	text-align: center;
-	padding: 20px;
-	border: 2px;
-}
-
 #pgFoot {
-	clear:both;
 	text-align:center;
 	padding: 20px;
 	border-top: 2px solid green;
