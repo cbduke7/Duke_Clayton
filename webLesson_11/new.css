@@ -11,10 +11,8 @@
 #kid1 {
 	border: 2px solid red;
 	background: green;
-	padding: 2-px;
-	margin: 10px;
-	height: 100px;
-	width: 60px;
+	padding: 20px;
+	margin: 20px;
 	-webkit-box-ordinal-group: 1;
 	-webkit-box-flex: 1;
 }
@@ -22,10 +20,8 @@
 #kid2 {
 	border: 2px solid red;
 	background: blue;
-	padding: 2-px;
-	margin: 10px;
-	height: 100px;
-	width: 60px;
+	padding: 20px;
+	margin: 20px;
 	-webkit-box-ordinal-group: 2;
 	-webkit-box-flex: 4;
 }
@@ -33,10 +29,8 @@
 #kid3 {
 	border: 2px solid red;
 	background: yellow;
-	padding: 2-px;
-	margin: 10px;
-	height: 100px;
-	width: 60px;
+	padding: 20px;
+	margin: 20px;
 	-webkit-box-ordinal-group: 3;
 	-webkit-box-flex: 1;
 }
@@ -44,10 +38,8 @@
 #kid4 {
 	border: 2px solid red;
 	background: purple;
-	padding: 2-px;
-	margin: 10px;
-	height: 100px;
-	width: 60px;
+	padding: 20px;
+	margin: 120px;
 	-webkit-box-ordinal-group: 4;
 	-webkit-box-flex: 1;
 }
