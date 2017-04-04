@@ -4,11 +4,11 @@
 }
 
 h1 {
-	font: bold 20px Tahoma;
+	font: bold 20px Broadway;
 }
 
 h2 {
-	font: bold 14px Tahoma;
+	font: bold 14px Broadway;
 }
 
 header , section, footer, aside, nav, article, hgroup {
@@ -21,20 +21,20 @@ body {
 
 
 #bigWrapper {
-	border: 1px solid puple;
+	border: 1px solid green;
 	width: 1000px;
 	margin: 20px auto;
 	text-align: left;
 }
 
 #topHead {
-	background: yellow;
+	background: blue;
 	border: 1px solid white;
 	padding: 20px;
 }
 
 #topMenu {
-	background: purple;
+	background:green ;
 	color: yellow;
 }
 
