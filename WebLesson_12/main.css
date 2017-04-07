@@ -5,7 +5,7 @@
 
 h1 {
 	font: bold 20px Tahoma;
-	background: -webkit-linear-gradient(right, red 19%, orange 60%);
+	background: -webkit-linear-gradient(right, #660099 19%, #33FF33  60%);
 	-webkit-border-radius: 15px;
 	-webkit-box-shadow: rgb(110, 110, 110, .8) 10px 8px 8px;
 	text-align: center;
@@ -28,6 +28,7 @@ body {
 
 
 #bigWrapper {
+	border: 1px solid #33FF33;
 	max-width: 1000px;
 	margin: 20px 0px;
 	display: -webkit-box;
@@ -36,22 +37,36 @@ body {
 }
 
 #topHead {
-	background: yellow;
+	background: blue;
 	border: 3px solid black;
 	padding: 20px;
 }
 
 #topMenu {
-	border: green;
-	background: red;
-	color: yellow;
+	border: 1px solid black;
+	background: #33FF33;
+	color: blue;
 }
 
 #topMenu li {
 	display:inline-block;
 	list-style:none;
-	padding: 5px;
-	font: bold 14px Tahoma;.
+	padding: 12px;
+	font: bold 14px Tahoma;
+	-webkit-transition:-webkit-transform 3s;
+}
+
+#topMenu li:link {color: blue;
+	text-decoration: underline;
+}
+
+#topMenu li:hover {
+	-webkit-transform: rotate(180deg);
+	text-decoration: bold;
+}
+#topMenu li:active {
+	-webkit-transform: rotate(1080deg);
+	background: -webkit-linear-gradient(left, blue 19%, purple 60%);
 }
 
 #flexDiv {
@@ -69,11 +84,11 @@ body {
 }
 
 #sideNews {
-	border: 1px solid red;
+	border: 1px solid #33FF33 ;
 	width: 220px;
 	margin: 20px 0px;
 	padding: 30px;
-	background: purple;
+	background: #660099;
 	-webkit-box-ordinal-group: 1;
 	-webkit-box-flex: 1;
 }	
@@ -81,16 +96,25 @@ body {
 #pgFoot {
 	text-align:center;
 	padding: 20px;
-	border-top: 2px solid green;
+	border-top: 2px solid #33FF33;
 }
 
 article {
-	background: yellow;
+	background: gray;
 	border:1px solid purple;
 	padding: 20px;
-	margin-bottom: 15px;
+	margin-bottom: 2px;
 }
 
 article > footer {
 	text-align: right;
+}
+
+#comment {
+	color: #33FF33;
+	border:1px solid #660099;
+	margin-bottom: 15px;
+	background: blue;
+	width: 390px;
+	margin-left: 20px;
 }
