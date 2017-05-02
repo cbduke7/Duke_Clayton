@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+<form>
+	Height: <input type = "text" size = 23 maxlength = 23 id = "height" value = "Enter your height in inches"/>
+	<br/>
+	<br/>
+	Weight: <input type = "text" size = 15 maxLength = 15 id = "weight" value = "Enter your weight"/>
+	<br/>
+	<br/>
+	<input type = "button" value = "Calculate" onclick = "calcBMI()"/>
+</form>
+<script type = "text/javascript">
+	function calcBMI() {
+		var h = document.getElementById("height").value;
+		var w = document.getElementById("weight").value;
+		document.write("Your BMI is..." + (w/(h**2)))
+	}
+</script>
+</body>
+</html>
