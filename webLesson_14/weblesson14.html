@@ -3,20 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lesson 14</title>
+	<script src = "script.js"></script>
 </head>
 <body>
-<form>
-	User Name: <input type = "text" size = 14 maxlength = 14 id = "User Name" value = "Enter Username"/>
+<form name = "input">
+	User Name: <input type = "text" id = "userame" value = "Enter Username"/>
 	<br/>
 	<br/>
-	Password: <input type = "text" size = 15 maxLength = 15 id = "Password" value = "Enter Password"/>
+	Password: <input type = "password" id = "password" value = "Enter Password"/>
 	<br/>
 	<br/>
-	<input type = "button" value = "Enter" onclick = ""/>
-</form>
-<script type = "text/javascript">
-	var x = document.forms.input.length;
-	document.write(x);
-</script>
+	<input type = "submit" value = "Enter" onclick = "validate"/>
+	</form>
 </body>
 </html>
