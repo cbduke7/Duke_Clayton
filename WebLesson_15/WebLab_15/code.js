@@ -1,5 +1,5 @@
 function shapes(){
-	var	x = document.getElementById("canvas")
+	var	x = document.getElementById("canvas");
 	canvas = x.getContext("2d");
 	canvas.fillStyle = "blue";
 	canvas.strokeStyle = "red";
