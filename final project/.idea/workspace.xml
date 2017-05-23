@@ -25,8 +25,8 @@
       <file leaf-file-name="FinalProj.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FinalProj.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+            <state relative-caret-position="153">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -35,8 +35,8 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="808">
-              <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+            <state relative-caret-position="757">
+              <caret line="84" column="29" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -64,8 +64,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
-    <option name="y" value="18" />
+    <option name="x" value="38" />
+    <option name="y" value="84" />
     <option name="width" value="796" />
     <option name="height" value="979" />
   </component>
@@ -521,14 +521,15 @@
       <workItem from="1495125889059" duration="2365000" />
       <workItem from="1495211580122" duration="3103000" />
       <workItem from="1495470856937" duration="3019000" />
+      <workItem from="1495557527508" duration="2753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9112000" />
+    <option name="totallyTimeSpent" value="11865000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="18" width="796" height="979" extended-state="0" />
+    <frame x="38" y="84" width="796" height="979" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -601,6 +602,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/FinalProj.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FinalProj.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
@@ -650,16 +667,16 @@
     <entry file="file://$PROJECT_DIR$/new 1" />
     <entry file="file://$PROJECT_DIR$/FinalProj.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        <state relative-caret-position="153">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="80" column="51" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+        <state relative-caret-position="757">
+          <caret line="84" column="29" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
           <folding />
         </state>
       </provider>

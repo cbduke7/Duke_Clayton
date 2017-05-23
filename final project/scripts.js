@@ -1,9 +1,9 @@
 var canvas = document.getElementById("canvasMaze");
 context = canvas.getContext("2d");
-var currRectX = 728.5;
+var currRectX = 278;
 var currrRecty = 3;
-var mazeWidth = 1457;
-var mazeHeight = 1453;
+var mazeWidth = 556;
+var mazeHeight = 556;
 var intervalvar;
 function drawMazeAndRectangle(rectX, rectY) {
     makeWhite(0, 0, canvas.width, canvas.height);
@@ -75,7 +75,21 @@ function MoveRect(e) {
     }
 
 }
+function canMoveTo(destX, destY) {
+    var imgData = context.getImageData(destX, destY, 15, 15);
+    var data = imgData.data;
+    var canMove = 1; // 1 means: the rectangle can move
+    if (destX >= 0 && destX <= mazeWidth -15 && desyY >= 0 && destY <= mazeHeight -15) { // check whether the rectangle would move inside the canvas
+        for (var i = 0; i < 4 * 15 *15; i += 4) {// look at all pixels
+            if (data[i] === 0 && data[i + 1] === 0 && data[i + 2] === 0) { // lime: #00FF00
+                canMove = 2; // 2
 
 
-drawMazeAndRectangle(728.5, 3);
+        }
+
+    }
+}
+
+
+drawMazeAndRectangle(278, 3);
 window.addEventListener("keydown", moveRect, true);
