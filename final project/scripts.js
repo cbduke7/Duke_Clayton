@@ -1,10 +1,18 @@
-var canvas = document.getElementById("canvasMaze");
+var canvas = document.getElementById("mazecanvas");
 context = canvas.getContext("2d");
 var currRectX = 278;
 var currrRecty = 3;
 var mazeWidth = 556;
 var mazeHeight = 556;
-var intervalvar;
+var intervalVar;
+function makeWhite(x, y, w, h) {
+    context.beginPath();
+    context.rect(x, y, w, h);
+    context.closePath();
+    context.fillStyle = "white";
+    context.fill();
+}
+
 function drawMazeAndRectangle(rectX, rectY) {
     makeWhite(0, 0, canvas.width, canvas.height);
     var mazeImg = new Image();
@@ -12,6 +20,7 @@ function drawMazeAndRectangle(rectX, rectY) {
         context.drawImage(mazeImg, 0, 0);
         drawRectangle(rectX, rectY, "#FF0000", false, true);
         context.beginPath();
+        context.arc(542, 122, 7, 0, 2 * Math.PI, false);
         context.closePath();
         context.fillStyle = '#00ff00';
         context.fill();
@@ -29,7 +38,7 @@ function drawRectangle(x, y, style){
     context.fill();
 }
 
-function MoveRect(e) {
+function moveRect(e) {
     var newX;
     var newY;
     var canMove;
@@ -81,15 +90,21 @@ function canMoveTo(destX, destY) {
     var canMove = 1; // 1 means: the rectangle can move
     if (destX >= 0 && destX <= mazeWidth -15 && desyY >= 0 && destY <= mazeHeight -15) { // check whether the rectangle would move inside the canvas
         for (var i = 0; i < 4 * 15 *15; i += 4) {// look at all pixels
-            if (data[i] === 0 && data[i + 1] === 0 && data[i + 2] === 0) { // lime: #00FF00
-                canMove = 2; // 2
-
-
+            if (data[i] === 0 && data[i + 1] === 0 && data[i + 2] === 0) { // black
+                canMove = 0; // 0 means: the rectangle can't move
+                break;
+            }
+            else if (data[i] === 0 && data[i + 1] === 255 && data[i + 2] === 0) { // lime: #00FF00
+                canMove = 2; // 2 means: the end point is reached
+                break;
         }
-
     }
 }
-
+else {
+        canMove = 0;
+    }
+    return canMove;
+}
 
 drawMazeAndRectangle(278, 3);
 window.addEventListener("keydown", moveRect, true);
