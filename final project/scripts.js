@@ -16,7 +16,7 @@ function makeWhite(x, y, w, h) {
 function drawMazeAndRectangle(rectX, rectY) {
     makeWhite(0, 0, canvas.width, canvas.height);
     var mazeImg = new Image();
-    mazeImg.onLoad = function() {
+    mazeImg.onLoad = function () { // when the image is loaded, draw the image, the rectangle and the circle
         context.drawImage(mazeImg, 0, 0);
         drawRectangle(rectX, rectY, "#FF0000", false, true);
         context.beginPath();
@@ -106,5 +106,43 @@ else {
     return canMove;
 }
 
+function createTimer(seconds) {
+    intervalVar = setInterval(function () {
+        makeWhite(mazeWidth, 0, canvas.width - mazeWidth, canvas.height);
+        if (seconds === 0) {
+            clearInterval(intervalVar);
+            window.removeEventListener("keydown", moveRect, true);
+            makeWhite(0, 0, canvas.width, canvas.height);
+            context.font = "40px Arial";
+            context.fillStyle = "red";
+            context.textAlign = "center"
+            context.textBaseline = "middle";
+            context.fillText("Time's up! Looser! You Really Suck!", canvas.width / 2, canvas.height / 2);
+            return;
+        }
+        context.font = "20px Arial";
+        if (seconds <= 10 && seconds > 5) {
+            context.fillStyle = "orangered";
+        }
+        else if (seconds <= 5) {
+            context.fillSytle = "red";
+        }
+        else {
+            context.fillStyle = "green";
+        }
+        context.textAlign = "center";
+        context.textBaseline = "middle";
+        var minutes = Math.floor(seconds / 60);
+        var secondsToShow = (seconds - minutes * 60).toString();
+        if (secondsToShow === 1){
+            secondsToShow = "0" + secondsToShow; // if the number of seconds is '5' for example. make sure that it is as '05'
+        }
+        context.fillText(minutes.toString() + ":" + secondsToShow, mazeWidth + 30, canvas.height/ 2);
+        seconds--;
+    }, 1000);
+}
+
+
 drawMazeAndRectangle(278, 3);
 window.addEventListener("keydown", moveRect, true);
+createTimer(120);
