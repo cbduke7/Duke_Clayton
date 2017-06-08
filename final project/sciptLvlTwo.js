@@ -1,3 +1,6 @@
+/**
+ * Created by dukec9804 on 6/6/2017.
+ */
 var canvas = document.getElementById("mazecanvas");
 context = canvas.getContext("2d");
 var currRectX = 278;
@@ -29,7 +32,7 @@ function drawMazeAndRectangle(rectX, rectY)
         context.fillStyle = '#00ff00';
         context.fill();
     };
-    mazeImg.src = "mazeLevel1.gif";
+    mazeImg.src = "mazeLevel2.gif";
 }
 function drawRectangle(x, y, style)
 {
@@ -107,10 +110,10 @@ function canMoveTo(destX, destY)
             else if (data[i] === 0 && data[i + 1] === 255 && data[i + 2] === 0) { // lime: #00FF00
                 canMove = 2; // 2 means: the end point is reached
                 break;
+            }
         }
     }
-}
-else {
+    else {
         canMove = 0;
     }
     return canMove;
