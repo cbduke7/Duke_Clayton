@@ -32,7 +32,7 @@ function drawMazeAndRectangle(rectX, rectY)
         context.fillStyle = '#00ff00';
         context.fill();
     };
-    mazeImg.src = "mazeLevel2.gif";
+    mazeImg.src = "maze.gif";
 }
 function drawRectangle(x, y, style)
 {
