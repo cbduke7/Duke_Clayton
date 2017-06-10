@@ -117,7 +117,7 @@ function createTimer(seconds) {
             context.fillStyle = "red";
             context.textAlign = "center";
             context.textBaseline = "middle";
-            context.fillText("Time's up!", canvas.width / 2, canvas.height / 2);
+            context.fillText("Time's up! You lost! :(", canvas.width / 2, canvas.height / 2);
             return;
         }
         context.font = "20px Arial";
@@ -152,6 +152,7 @@ drawMazeAndRectangle(276, 3);
 window.addEventListener("keydown", moveRect, true);
 createTimer(100); // 2 minutes
 </script>
-<a href =
+        <a href = "Home.html"></a><br/>
+        <a href = "Level2.html">Level 2 </a>
 </body>
 </html>
